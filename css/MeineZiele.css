@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* loader */
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .loader-container.active {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader {
+    color: #fff;
+    font-size: 2rem;
+    font-family: monospace;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+
+
+
+/* background */
+body {
+    height: 100vh;
+    background: #1c001c;
+    background: linear-gradient(90deg, rgba(28, 0, 28, 1) 1%, rgba(105, 6, 87, 1) 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 2s infinite alternate;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* where im put all information */
+.box {
+    width: 1000px;
+    height: 750px; 
+    background-color: #151515; 
+    border-radius: 20px; 
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* header */
+.language_select {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 890px;
+    top: 10px;
+
+}
+.portfolio {
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
+    top: 7px;
+    left: 50px;
+    font-family: "Orbitron", sans-serif;
+    color: #a020f0;
+    display: flex;
+    position: absolute;
+
+}
+.nav-links {
+    top: 20px;
+    margin-left: 270px;
+    position: absolute;
+    display: flex;
+    list-style: none; 
+    padding: 0;
+}
+
+.nav-links li {
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important; 
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    
+    color: #a020f0 !important; 
+ }
+ .ziele-section {
+    padding: 60px 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  .ziele-section h2 {
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #cc33ff;
+  }
+  
+  .ziele-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .ziel-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .ziel-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    transition: box-shadow 0.3s ease;
+    transform: translateY(-5px);
+  }
+  
+  .ziel-card .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .ziel-card h3 {
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
+    font-size: 1.2rem;
+    color: #ff66cc;
+    margin-bottom: 10px;
+  }
+  
+  .ziel-card p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
