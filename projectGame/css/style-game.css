@@ -102,6 +102,9 @@ max-width: 600px;
 max-width: 1000px;
  }
  .decription {
+     display: flex; 
+     position: relative;
+    left: 24px;
     max-width: 1000px;
  }
  .scr {
