@@ -181,3 +181,61 @@ z-index: 300;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
     transition: box-shadow 0.3s ease;
 }
+
+.Tank_ {
+    position: relative;
+    display: flex;
+left: 40%;
+top: 21%;
+}
+
+.Tank_ p {
+        display: flex;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    color: #ffffff;
+opacity: 0;
+font-family: "Montserrat", sans-serif;
+font-size: 25px;
+width: auto;
+height: 20px;
+}
+.Tank_:hover p{
+    opacity: 1;
+
+}
+.Tank_:hover {
+    filter: brightness(60%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    transition: box-shadow 0.3s ease;
+
+}
+
+.Knight_ {
+    position: relative;
+    display: flex;
+left: 200%;
+}
+
+.Knight_ p {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    color: #ffffff;
+opacity: 0;
+font-family: "Montserrat", sans-serif;
+font-size: 25px;
+z-index: 300;
+}
+.Knight_:hover p{
+    opacity: 1;
+
+}
+.Knight_:hover {
+    filter: brightness(60%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+    transition: box-shadow 0.3s ease;
+
+}

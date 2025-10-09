@@ -208,5 +208,5 @@ background:  linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103,
 
 @keyframes cschFill {
     from { width: 0%; }
-    to { width: 40%; }
+    to { width: 65%; }
 }
